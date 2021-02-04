@@ -42,7 +42,7 @@ async fn main() -> anyhow::Result<()> {
     };
 
     let data = web::Data::new(WebData {
-        authenticator: Authenticator { client, scopes },
+        authenticator: Authenticator::new(client, scopes).await,
         service: service::PostgresManagementService::new(ManagementServiceConfig::from_env()?)?,
     });
 

@@ -43,12 +43,15 @@ cloudevents-sdk-actix-web = "0.3"
 
 drogue-cloud-endpoint-common = { path = "../endpoint-common" }
 drogue-cloud-service-api = { path = "../service-api" }
+drogue-cloud-service-common = { path = "../service-common" }
 drogue-ttn = "0.1.1"
 
 dotenv = "0.15.0"
 jsonwebtokens = "1.0.0-alpha.13"
 
 awc = "2.0.0"
+
+openid = "0.7"
 
 [dependencies.rust-tls]
 version = "0.19"
